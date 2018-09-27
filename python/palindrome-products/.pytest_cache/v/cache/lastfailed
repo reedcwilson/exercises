@@ -1,0 +1,4 @@
+{
+  "palindrome_products_test.py::PalindromesTests::test_largest_palindrome_from_single_digit_factors": true,
+  "palindrome_products_test.py::PalindromesTests::test_largest_palindrome_from_triple_digit_factors": true
+}

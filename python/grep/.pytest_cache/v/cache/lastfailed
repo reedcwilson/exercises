@@ -1,0 +1,23 @@
+{
+  "grep_test.py::GrepTest::test_multiple_files_no_matches_various_flags": true,
+  "grep_test.py::GrepTest::test_multiple_files_one_match_match_entire_lines_flag": true,
+  "grep_test.py::GrepTest::test_multiple_files_one_match_multiple_flags": true,
+  "grep_test.py::GrepTest::test_multiple_files_one_match_no_flags": true,
+  "grep_test.py::GrepTest::test_multiple_files_one_match_print_file_names_flag": true,
+  "grep_test.py::GrepTest::test_multiple_files_several_matches_case_insensitive_flag": true,
+  "grep_test.py::GrepTest::test_multiple_files_several_matches_inverted_flag": true,
+  "grep_test.py::GrepTest::test_multiple_files_several_matches_no_flags": true,
+  "grep_test.py::GrepTest::test_multiple_files_several_matches_print_line_numbers_flag": true,
+  "grep_test.py::GrepTest::test_one_file_no_matches_various_flags": true,
+  "grep_test.py::GrepTest::test_one_file_one_match_case_insensitive_flag": true,
+  "grep_test.py::GrepTest::test_one_file_one_match_match_entire_lines_flag": true,
+  "grep_test.py::GrepTest::test_one_file_one_match_multiple_flags": true,
+  "grep_test.py::GrepTest::test_one_file_one_match_no_flags": true,
+  "grep_test.py::GrepTest::test_one_file_one_match_print_file_names_flag": true,
+  "grep_test.py::GrepTest::test_one_file_one_match_print_line_numbers_flag": true,
+  "grep_test.py::GrepTest::test_one_file_several_matches_case_insensitive_flag": true,
+  "grep_test.py::GrepTest::test_one_file_several_matches_inverted_flag": true,
+  "grep_test.py::GrepTest::test_one_file_several_matches_match_entire_lines_flag": true,
+  "grep_test.py::GrepTest::test_one_file_several_matches_no_flags": true,
+  "grep_test.py::GrepTest::test_one_file_several_matches_print_line_numbers_flag": true
+}

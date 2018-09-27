@@ -1,0 +1,7 @@
+{
+  "pythagorean_triplet_test.py::PythagoreanTripletTest::test_odd_number": true,
+  "pythagorean_triplet_test.py::PythagoreanTripletTest::test_triplet1": true,
+  "pythagorean_triplet_test.py::PythagoreanTripletTest::test_triplet2": true,
+  "pythagorean_triplet_test.py::PythagoreanTripletTest::test_triplet3": true,
+  "pythagorean_triplet_test.py::PythagoreanTripletTest::test_triplet4": true
+}
