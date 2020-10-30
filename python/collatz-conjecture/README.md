@@ -1,67 +1,35 @@
-# Rectangles
+# Collatz Conjecture
 
-Count the rectangles in an ASCII diagram like the one below.
+The Collatz Conjecture or 3x+1 problem can be summarized as follows:
 
-```text
-   +--+
-  ++  |
-+-++--+
-|  |  |
-+--+--+
-```
+Take any positive integer n. If n is even, divide n by 2 to get n / 2. If n is
+odd, multiply n by 3 and add 1 to get 3n + 1. Repeat the process indefinitely.
+The conjecture states that no matter which number you start with, you will
+always reach 1 eventually.
 
-The above diagram contains 6 rectangles:
+Given a number n, return the number of steps required to reach 1.
 
-```text
+## Examples
 
+Starting with n = 12, the steps would be as follows:
 
-+-----+
-|     |
-+-----+
-```
+0. 12
+1. 6
+2. 3
+3. 10
+4. 5
+5. 16
+6. 8
+7. 4
+8. 2
+9. 1
 
-```text
-   +--+
-   |  |
-   |  |
-   |  |
-   +--+
-```
+Resulting in 9 steps. So for input n = 12, the return value would be 9.
 
-```text
-   +--+
-   |  |
-   +--+
+## Notes
 
+The Collatz Conjecture is only concerned with strictly positive integers, so your solution should raise a `ValueError` with a meaningful message if given 0 or a negative integer.
 
-```
-
-```text
-
-
-   +--+
-   |  |
-   +--+
-```
-
-```text
-
-
-+--+
-|  |
-+--+
-```
-
-```text
-
-  ++
-  ++
-
-
-```
-
-You may assume that the input is always a proper rectangle (i.e. the length of
-every line equals the length of the first line).
 
 ## Exception messages
 
@@ -81,11 +49,11 @@ raise Exception("Meaningful message indicating the source of the error")
 
 To run the tests, run the appropriate command below ([why they are different](https://github.com/pytest-dev/pytest/issues/1629#issue-161422224)):
 
-- Python 2.7: `py.test rectangles_test.py`
-- Python 3.4+: `pytest rectangles_test.py`
+- Python 2.7: `py.test collatz_conjecture_test.py`
+- Python 3.4+: `pytest collatz_conjecture_test.py`
 
 Alternatively, you can tell Python to run the pytest module (allowing the same command to be used regardless of Python version):
-`python -m pytest rectangles_test.py`
+`python -m pytest collatz_conjecture_test.py`
 
 ### Common `pytest` options
 
@@ -97,12 +65,16 @@ For other options, see `python -m pytest -h`
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/rectangles` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/collatz-conjecture` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
 For more detailed information about running tests, code style and linting,
 please see [Running the Tests](http://exercism.io/tracks/python/tests).
+
+## Source
+
+An unsolved problem in mathematics named after mathematician Lothar Collatz [https://en.wikipedia.org/wiki/3x_%2B_1_problem](https://en.wikipedia.org/wiki/3x_%2B_1_problem)
 
 ## Submitting Incomplete Solutions
 

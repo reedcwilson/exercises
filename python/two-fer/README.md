@@ -1,67 +1,16 @@
-# Rectangles
+# Two Fer
 
-Count the rectangles in an ASCII diagram like the one below.
-
-```text
-   +--+
-  ++  |
-+-++--+
-|  |  |
-+--+--+
-```
-
-The above diagram contains 6 rectangles:
+`Two-fer` or `2-fer` is short for two for one. One for you and one for me.
 
 ```text
-
-
-+-----+
-|     |
-+-----+
+"One for X, one for me."
 ```
 
-```text
-   +--+
-   |  |
-   |  |
-   |  |
-   +--+
-```
+When X is a name or "you".
 
-```text
-   +--+
-   |  |
-   +--+
+If the given name is "Alice", the result should be "One for Alice, one for me."
+If no name is given, the result should be "One for you, one for me."
 
-
-```
-
-```text
-
-
-   +--+
-   |  |
-   +--+
-```
-
-```text
-
-
-+--+
-|  |
-+--+
-```
-
-```text
-
-  ++
-  ++
-
-
-```
-
-You may assume that the input is always a proper rectangle (i.e. the length of
-every line equals the length of the first line).
 
 ## Exception messages
 
@@ -81,11 +30,11 @@ raise Exception("Meaningful message indicating the source of the error")
 
 To run the tests, run the appropriate command below ([why they are different](https://github.com/pytest-dev/pytest/issues/1629#issue-161422224)):
 
-- Python 2.7: `py.test rectangles_test.py`
-- Python 3.4+: `pytest rectangles_test.py`
+- Python 2.7: `py.test two_fer_test.py`
+- Python 3.4+: `pytest two_fer_test.py`
 
 Alternatively, you can tell Python to run the pytest module (allowing the same command to be used regardless of Python version):
-`python -m pytest rectangles_test.py`
+`python -m pytest two_fer_test.py`
 
 ### Common `pytest` options
 
@@ -97,12 +46,16 @@ For other options, see `python -m pytest -h`
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/rectangles` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/two-fer` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
 For more detailed information about running tests, code style and linting,
 please see [Running the Tests](http://exercism.io/tracks/python/tests).
+
+## Source
+
+[https://en.wikipedia.org/wiki/Two-fer](https://en.wikipedia.org/wiki/Two-fer)
 
 ## Submitting Incomplete Solutions
 

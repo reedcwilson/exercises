@@ -1,67 +1,24 @@
-# Rectangles
+# Resistor Color
 
-Count the rectangles in an ASCII diagram like the one below.
+Resistors have color coded bands, where each color maps to a number. The first 2 bands of a resistor have a simple encoding scheme: each color maps to a single number.
 
-```text
-   +--+
-  ++  |
-+-++--+
-|  |  |
-+--+--+
-```
+These colors are encoded as follows:
 
-The above diagram contains 6 rectangles:
+- Black: 0
+- Brown: 1
+- Red: 2
+- Orange: 3
+- Yellow: 4
+- Green: 5
+- Blue: 6
+- Violet: 7
+- Grey: 8
+- White: 9
 
-```text
+Mnemonics map the colors to the numbers, that, when stored as an array, happen to map to their index in the array: Better Be Right Or Your Great Big Values Go Wrong.
 
+More information on the color encoding of resistors can be found in the [Electronic color code Wikipedia article](https://en.wikipedia.org/wiki/Electronic_color_code)
 
-+-----+
-|     |
-+-----+
-```
-
-```text
-   +--+
-   |  |
-   |  |
-   |  |
-   +--+
-```
-
-```text
-   +--+
-   |  |
-   +--+
-
-
-```
-
-```text
-
-
-   +--+
-   |  |
-   +--+
-```
-
-```text
-
-
-+--+
-|  |
-+--+
-```
-
-```text
-
-  ++
-  ++
-
-
-```
-
-You may assume that the input is always a proper rectangle (i.e. the length of
-every line equals the length of the first line).
 
 ## Exception messages
 
@@ -81,11 +38,11 @@ raise Exception("Meaningful message indicating the source of the error")
 
 To run the tests, run the appropriate command below ([why they are different](https://github.com/pytest-dev/pytest/issues/1629#issue-161422224)):
 
-- Python 2.7: `py.test rectangles_test.py`
-- Python 3.4+: `pytest rectangles_test.py`
+- Python 2.7: `py.test resistor_color_test.py`
+- Python 3.4+: `pytest resistor_color_test.py`
 
 Alternatively, you can tell Python to run the pytest module (allowing the same command to be used regardless of Python version):
-`python -m pytest rectangles_test.py`
+`python -m pytest resistor_color_test.py`
 
 ### Common `pytest` options
 
@@ -97,12 +54,16 @@ For other options, see `python -m pytest -h`
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/rectangles` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/resistor-color` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
 For more detailed information about running tests, code style and linting,
 please see [Running the Tests](http://exercism.io/tracks/python/tests).
+
+## Source
+
+Maud de Vries, Erik Schierboom [https://github.com/exercism/problem-specifications/issues/1458](https://github.com/exercism/problem-specifications/issues/1458)
 
 ## Submitting Incomplete Solutions
 

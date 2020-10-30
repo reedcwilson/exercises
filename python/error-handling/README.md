@@ -1,67 +1,23 @@
-# Rectangles
+# Error Handling
 
-Count the rectangles in an ASCII diagram like the one below.
+Implement various kinds of error handling and resource management.
 
-```text
-   +--+
-  ++  |
-+-++--+
-|  |  |
-+--+--+
-```
+An important point of programming is how to handle errors and close
+resources even if errors occur.
 
-The above diagram contains 6 rectangles:
+This exercise requires you to handle various errors. Because error handling
+is rather programming language specific you'll have to refer to the tests
+for your track to see what's exactly required.
 
-```text
+## Hints
 
+For the `filelike_objects_are_closed_on_exception` function, the `filelike_object`
+will be an instance of a custom `FileLike` class defined in the test suite. This
+class implements the following methods:
+- `open` and `close`, for explicit opening and closing.
+- `__enter__` and `__exit__`, for implicit opening and closing.
+- `do_something`, which may or may not throw an `Exception`.
 
-+-----+
-|     |
-+-----+
-```
-
-```text
-   +--+
-   |  |
-   |  |
-   |  |
-   +--+
-```
-
-```text
-   +--+
-   |  |
-   +--+
-
-
-```
-
-```text
-
-
-   +--+
-   |  |
-   +--+
-```
-
-```text
-
-
-+--+
-|  |
-+--+
-```
-
-```text
-
-  ++
-  ++
-
-
-```
-
-You may assume that the input is always a proper rectangle (i.e. the length of
-every line equals the length of the first line).
 
 ## Exception messages
 
@@ -81,11 +37,11 @@ raise Exception("Meaningful message indicating the source of the error")
 
 To run the tests, run the appropriate command below ([why they are different](https://github.com/pytest-dev/pytest/issues/1629#issue-161422224)):
 
-- Python 2.7: `py.test rectangles_test.py`
-- Python 3.4+: `pytest rectangles_test.py`
+- Python 2.7: `py.test error_handling_test.py`
+- Python 3.4+: `pytest error_handling_test.py`
 
 Alternatively, you can tell Python to run the pytest module (allowing the same command to be used regardless of Python version):
-`python -m pytest rectangles_test.py`
+`python -m pytest error_handling_test.py`
 
 ### Common `pytest` options
 
@@ -97,7 +53,7 @@ For other options, see `python -m pytest -h`
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/rectangles` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/error-handling` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
